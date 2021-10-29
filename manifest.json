@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "WaterYouDoing",
+  "description": "A extension that tracks your daily water intake!",
+  "version": "1.0",
+
+  "icons": {
+      "16": "/images/WaterIcon16x16.png",
+      "48": "/images/WaterIcon48x48.png",
+      "128":"/images/WaterIcon128x128.png"
+    },
+    
+    "page_action": { 
+    "default_icon": {
+      "16": "/images/WaterIcon16x16.png",
+      "48": "/images/WaterIcon48x48.png",
+      "128": "/images/WaterIcon128x128.png"
+    }
+ },
+  "content_scripts": [
+    {
+ "matches" : ["<all_urls>"],
+ "js" : ["chromeExtension.js"],
+  "CSS": ["chromeExtension.css"]
+  }
+]
+} 
